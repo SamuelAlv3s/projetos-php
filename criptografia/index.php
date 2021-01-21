@@ -19,7 +19,6 @@ $options = [
 
 $senhasegura = password_hash($senha, PASSWORD_DEFAULT, $options);
 
-
 if(password_verify($senha, $senha_db)):
     echo "Senha válida";
 else:
